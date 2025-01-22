@@ -4,8 +4,8 @@ const sendEmail = async (to, subject, htmlContent, attachments = []) => {
   const transporter = nodemailer.createTransport({
     service: "hotmail",
     auth: {
-      user: "mau_02-95@ghotmail.com", // Cambia a tu correo
-      pass: "mimamamemima123", // Usa una contraseña de aplicación
+      user: "mau_02-95@hotmail.com", // Cambia a tu correo
+      pass: "...", // Usa una contraseña de aplicación
     },
   });
 
