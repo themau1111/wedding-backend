@@ -42,6 +42,7 @@ export default async (req, res) => {
         <li><b>Notas:</b> ${updatedGuest.notes}</li>
       </ul>
       <p>Adjuntamos la lista completa de invitados en Excel.</p>
+      <p style="color: gray; font-size: 12px;">Si recibiste este mensaje por error, ignóralo.</p>
     `;
 
     await sendEmail(
