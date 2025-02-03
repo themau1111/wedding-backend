@@ -45,7 +45,7 @@ export default async (req, res) => {
     `;
 
     await sendEmail(
-      ["mau_02-95@hotmail.com", "soliskarina17@gmail.com"],
+      ["mau0295@gmail.com", "soliskarina17@gmail.com"],
       subject,
       htmlContent,
       [{ filename: "Invitados.xlsx", content: excelBuffer }]
