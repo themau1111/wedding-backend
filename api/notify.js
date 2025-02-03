@@ -32,13 +32,14 @@ export default async (req, res) => {
       <p>${updatedGuest.name} ha actualizado su confirmación:</p>
       <ul>
         <li><b>Estado:</b> ${updatedGuest.confirmation_status}</li>
-        <li><b>Acompañantes:</b> ${
+        <li><b>Acompañantes:</b> <br> ${
           updatedGuest.attendees
             ?.map(
               (a) => `${a.name} (${a.isConfirmed ? "Confirmado" : "Pendiente"})`
             )
-            .join(", ") || "Ninguno"
+            .join("<br>") || "Ninguno"
         }</li>
+        <li><b>Notas:</b> ${updatedGuest.notes}</li>
       </ul>
       <p>Adjuntamos la lista completa de invitados en Excel.</p>
     `;
